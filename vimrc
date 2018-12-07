@@ -11,3 +11,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
+
+" Strip trailing whitespace on buffer save
+autocmd BufWritePre * :%s/\s\+$//e
