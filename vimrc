@@ -6,6 +6,8 @@ set number
 
 call plug#begin('~/.vim/plugged')
 " Plug imports go here...
+
+Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
