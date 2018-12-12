@@ -25,6 +25,8 @@ call plug#end()
 
 au FileType gitcommit set tw=72
 set number
+set shiftwidth=2
+set clipboard=unnamed
 let g:solarized_termcolors=256
 colorscheme solarized8_light
 
