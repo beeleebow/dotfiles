@@ -106,5 +106,5 @@ alias fmar="git fetch && git rebase origin/master"
 alias nx="nix-shell --command zsh"
 
 ## set path
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$HOME/Library/Haskell/bin:$PATH"
 
