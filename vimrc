@@ -19,6 +19,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'flazz/vim-colorschemes'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
