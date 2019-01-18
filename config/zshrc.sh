@@ -1,9 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export TEST_VAR="blah"
-export BBOW_VAR="hello world"
-
 # Path to your oh-my-zsh installation.
 export ZSH=~/.dotfiles/.oh-my-zsh
 
@@ -11,6 +8,11 @@ export ZSH=~/.dotfiles/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random

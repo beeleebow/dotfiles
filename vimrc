@@ -18,8 +18,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'flazz/vim-colorschemes'
 Plug 'kien/ctrlp.vim'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -27,8 +27,11 @@ au FileType gitcommit set tw=72
 set number
 set shiftwidth=2
 set clipboard=unnamed
-let g:solarized_termcolors=256
-colorscheme solarized8_light
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 " remove trailing whitespace on buffer save
 autocmd BufWritePre * :%s/\s\+$//e
