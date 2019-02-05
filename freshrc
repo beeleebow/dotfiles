@@ -12,12 +12,14 @@
 fresh freshshell/fresh bin/fresh --bin
 
 # creates a symlink to from foo to ~/.foo
-fresh bashrc --file
+fresh programs/bash/bashrc --file
+fresh programs/bash/bash_profile --file
 fresh programs/vim/vimrc --file
 
 # components of bashrc
 fresh programs/bash/path.sh
 fresh programs/bash/prompt.sh
+fresh programs/bash/aliases.sh
 
 # gets plug.vim file from junegunn/vim-plug and puts it at ~/.vim/autoload/plug.vim
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim
