@@ -44,7 +44,7 @@ status_bar () {
 }
 
 if [ "$color_prompt" = yes ]; then
-  PS1="\[\e[01;32m\]\u@\h\[\e[m\] \$(status_bar)\n\[\e[01;34m\]\w\[\e[m\] » "
+  PS1="\[\e[1;32m\]\u@\h\[\e[m\] \$(status_bar)\n\[\e[1;34m\]\w\[\e[m\] » "
 else
   PS1="\u@\h \$(status_bar)\n\w » "
 fi
