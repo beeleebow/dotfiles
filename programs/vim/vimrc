@@ -20,6 +20,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
 Plug 'chriskempson/base16-vim'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
