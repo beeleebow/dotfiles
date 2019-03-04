@@ -17,7 +17,11 @@ fresh programs/vim/vimrc --file
 fresh Brewfile --file=Brewfile
 fresh programs/tmux/tmux.conf --file
 fresh chriskempson/base16-shell . --file=~/.config/base16-shell/
-fresh jasonrudolph/ControlEscape.spoon . --file=~/.hammerspoon/Spoons/ControlEscape.spoon/
+
+# hammerspoon
+# can add spoons by git cloning the spoon repo into hammerspoon/spoons
+# you'll probably then need to run some sort of setup script (which the spoon will have)
+fresh programs/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
 
 # components of bashrc
 fresh programs/bash/dotfiles.sh
