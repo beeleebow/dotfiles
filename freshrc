@@ -23,6 +23,9 @@ fresh chriskempson/base16-shell . --file=~/.config/base16-shell/
 # you'll probably then need to run some sort of setup script (which the spoon will have)
 fresh programs/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
 
+# tmux up - thanks James
+fresh jamesottaway/tmux-up tmux-up --bin
+
 # components of bashrc
 fresh programs/bash/dotfiles.sh
 fresh programs/bash/path.sh
