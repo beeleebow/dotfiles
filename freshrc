@@ -18,11 +18,6 @@ fresh Brewfile --file=Brewfile
 fresh programs/tmux/tmux.conf --file
 fresh chriskempson/base16-shell . --file=~/.config/base16-shell/
 
-# hammerspoon
-# can add spoons by git cloning the spoon repo into hammerspoon/spoons
-# you'll probably then need to run some sort of setup script (which the spoon will have)
-fresh programs/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
-
 # tmux up - thanks James
 fresh jamesottaway/tmux-up tmux-up --bin
 
