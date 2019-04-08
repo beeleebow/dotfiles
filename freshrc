@@ -11,6 +11,11 @@
 # Updates fresh
 fresh freshshell/fresh bin/fresh --bin
 
+# Hammerspoon
+fresh jasonrudolph/ControlEscape.spoon . --file=~/.hammerspoon/Spoons/ControlEscape.spoon/
+fresh programs/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
+
+# symlink files
 fresh programs/bash/bashrc --file
 fresh programs/bash/bash_profile --file
 fresh programs/vim/vimrc --file
