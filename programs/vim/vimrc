@@ -25,6 +25,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-surround'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
