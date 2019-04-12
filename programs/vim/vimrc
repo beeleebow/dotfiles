@@ -1,5 +1,6 @@
 syntax on
 let t_Co=256
+let mapleader = ","
 
 " Indentation
 set shiftwidth=2                           " Number of spaces to use in each autoindent step
@@ -45,6 +46,12 @@ let g:ale_fixers = {
   \ 'elixir': ['mix_format'],
   \ 'elm': ['format'],
 \}
+
+
+" aliases
+nnoremap <leader>ad :ALEDetail<CR>
+nnoremap <leader>aj :ALENext<CR>
+nnoremap <leader>ak :ALEPrevious<CR>
 
 " remove trailing whitespace on buffer save
 autocmd BufWritePre * :%s/\s\+$//e
