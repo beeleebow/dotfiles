@@ -32,6 +32,7 @@ fresh programs/bash/path.sh
 fresh programs/bash/prompt.sh
 fresh programs/bash/aliases.sh
 fresh programs/bash/base_16.sh
+fresh programs/bash/nix.sh
 
 # gets plug.vim file from junegunn/vim-plug and puts it at ~/.vim/autoload/plug.vim
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim
