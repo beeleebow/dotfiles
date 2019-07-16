@@ -1,4 +1,4 @@
-syntax on
+
 let t_Co=256
 let mapleader = ","
 
@@ -14,7 +14,19 @@ set autoindent                             " Automatic indentation in non-C file
 set foldmethod=indent                      " Fold based on source indentation
 set foldlevelstart=99                      " Expand all folds by default
 
-" add vim plugins
+" --------------------------- netrw settings
+
+" give a directory-file like list view
+let g:netrw_liststyle = 3
+
+" makes the split stay on the left and open
+" files to the right
+let g:netrw_browse_split = 4
+
+" use 25% for file explorer split
+let g:netrw_winsize = 25
+
+" --------------------------- vim plugins via Plug
 call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
@@ -23,9 +35,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-Plug 'w0rp/ale'
 Plug 'tpope/vim-surround'
-Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
@@ -39,20 +49,6 @@ if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
-
-" Ale (for vim)
-let g:ale_fix_on_save = 1
-let g:ale_fixers = {
-  \ 'typescript': ['prettier'],
-  \ 'elixir': ['mix_format'],
-  \ 'elm': ['format'],
-\}
-
-
-" aliases
-nnoremap <leader>ad :ALEDetail<CR>
-nnoremap <leader>aj :ALENext<CR>
-nnoremap <leader>ak :ALEPrevious<CR>
 
 " remove trailing whitespace on buffer save
 autocmd BufWritePre * :%s/\s\+$//e
