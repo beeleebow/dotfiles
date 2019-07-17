@@ -1,17 +1,30 @@
-let t_Co=256
-let mapleader = ","
+" Use Vim settings, instead of Vi
+set nocompatible
 
-" Indentation
-set shiftwidth=2                           " Number of spaces to use in each autoindent step
-set tabstop=2                              " Two tab spaces
-set softtabstop=2                          " Number of spaces to skip or insert when <BS>ing or <Tab>ing
-set expandtab                              " Spaces instead of tabs for better cross-editor compatibility
-set autoindent                             " Keep the indent when creating a new line
-set smarttab                               " Use shiftwidth and softtabstop to insert or delete (on <BS>) blanks
-set cindent                                " Recommended seting for automatic C-style indentation
-set autoindent                             " Automatic indentation in non-C files
-set foldmethod=indent                      " Fold based on source indentation
-set foldlevelstart=99                      " Expand all folds by default
+" --------------------------- new
+" this is where I put things I'm trying out
+set visualbell
+set errorbells!
+
+" --------------------------- ungrouped
+
+let mapleader = ","
+set showmode
+set autoread
+autocmd BufWritePre * :%s/\s\+$//e
+
+" --------------------------- indentation
+
+set shiftwidth=2                 " Number of spaces to use in each autoindent step
+set tabstop=2                    " Two tab spaces
+set softtabstop=2                " Number of spaces to skip or insert when <BS>ing or <Tab>ing
+set expandtab                    " Spaces instead of tabs for better cross-editor compatibility
+set autoindent                   " Keep the indent when creating a new line
+set smarttab                     " Use shiftwidth and softtabstop to insert or delete (on <BS>) blanks
+set cindent                      " Recommended seting for automatic C-style indentation
+set autoindent                   " Automatic indentation in non-C files
+set foldmethod=indent            " Fold based on source indentation
+set foldlevelstart=99            " Expand all folds by default
 
 " --------------------------- netrw settings
 
@@ -25,7 +38,17 @@ let g:netrw_browse_split = 4
 " use 25% for file explorer split
 let g:netrw_winsize = 25
 
+" --------------------------- mouse
+
+set mouse=a " enable mouse for scrolling and resizing
+
+" --------------------------- commands
+
+set history=1000
+set wildmenu
+
 " --------------------------- vim plugins via Plug
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
@@ -38,18 +61,23 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
+" --------------------------- line numbers and cursor
+
 au FileType gitcommit set tw=72
 set number
 set rnu
 set cursorline
 set cursorcolumn
-set shiftwidth=2
-set clipboard=unnamed
 
+" --------------------------- status bar and ruler
+
+set ruler
+
+" --------------------------- colorization
+
+let t_Co=256
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
 
-" remove trailing whitespace on buffer save
-autocmd BufWritePre * :%s/\s\+$//e
