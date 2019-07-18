@@ -1,5 +1,6 @@
 " Use Vim settings, instead of Vi
 set nocompatible
+set exrc
 
 " --------------------------- new
 " this is where I put things I'm trying out
@@ -76,9 +77,8 @@ set statusline+=\ Percent\:\ %P
 
 " --------------------------- swap and backup files
 
-set swapfile!
-set backup!
-set nowb!
+set directory=$HOME/.vim/swp// " store all swapfiles here
+set backupdir=$HOME/.vim/backup// " store all backup files here
 
 " --------------------------- commands
 
