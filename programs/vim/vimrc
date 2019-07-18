@@ -64,6 +64,16 @@ set ruler
 set laststatus=2
 set mouse=a " enable mouse for scrolling and resizing
 
+" --------------------------- status bar
+
+set statusline=%t
+set statusline+=\ %m
+set statusline+=\ [%r]
+set statusline+=\ %y
+set statusline+=\ Line\:\ %l/%L
+set statusline+=\ Col\:\ %c
+set statusline+=\ Percent\:\ %P
+
 " --------------------------- swap and backup files
 
 set swapfile!
