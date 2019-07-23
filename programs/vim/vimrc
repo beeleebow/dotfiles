@@ -75,10 +75,13 @@ set statusline+=\ Line\:\ %l/%L
 set statusline+=\ Col\:\ %c
 set statusline+=\ Percent\:\ %P
 
-" --------------------------- swap and backup files
+" --------------------------- swap, backup, and undo files
 
 set directory=$HOME/.vim/swp// " store all swapfiles here
 set backupdir=$HOME/.vim/backup// " store all backup files here
+
+set undofile
+set undodir=$HOME/.vim/undo// " store all undo files here
 
 " --------------------------- commands
 
