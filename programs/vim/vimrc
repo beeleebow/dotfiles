@@ -20,6 +20,8 @@ set autoindent                   " Keep the indent when creating a new line
 set tabstop=4                    " Four tab spaces
 set shiftwidth=2                 " Number of spaces to use in each autoindent step
 set softtabstop=2                " Number of spaces to skip or insert when <BS>ing or <Tab>ing
+au FileType cs set shiftwidth=4
+au FileType cs set softtabstop=4
 set expandtab                    " Spaces instead of tabs for better cross-editor compatibility
 set smarttab                     " Use shiftwidth and softtabstop to insert or delete (on <BS>) blanks
 set cindent                      " Recommended seting for automatic C-style indentation
