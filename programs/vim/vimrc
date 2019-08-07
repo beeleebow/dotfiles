@@ -66,6 +66,7 @@ set cursorcolumn
 set ruler
 set laststatus=2
 set mouse=a " enable mouse for scrolling and resizing
+set showcmd
 
 " --------------------------- status bar
 
