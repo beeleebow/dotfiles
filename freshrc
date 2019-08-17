@@ -19,6 +19,7 @@ fresh programs/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
 fresh programs/bash/bashrc --file
 fresh programs/bash/bash_profile --file
 fresh programs/vim/vimrc --file
+fresh programs/vim/markdown.vim --file=~/.vim/ftplugin/markdown.vim
 fresh Brewfile --file=Brewfile
 fresh programs/tmux/tmux.conf --file
 fresh chriskempson/base16-shell . --file=~/.config/base16-shell/
