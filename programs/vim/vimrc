@@ -105,6 +105,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'vim-scripts/ReplaceWithRegister'
 
 call plug#end()
 
