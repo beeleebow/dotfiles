@@ -113,6 +113,12 @@ call plug#end()
 
 au FileType gitcommit set tw=72
 
+" --------------------------- key mappings
+
+" cycle through prev/next buffers
+map <C-K> :bprev<CR>
+map <C-J> :bnext<CR>
+
 " --------------------------- colorization
 
 let t_Co=256
