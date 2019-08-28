@@ -113,7 +113,9 @@ call plug#end()
 
 au FileType gitcommit set tw=72
 
-" --------------------------- key mappings
+" --------------------------- buffers
+
+set hidden
 
 " cycle through prev/next buffers
 map <C-K> :bprev<CR>
