@@ -106,6 +106,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/ReplaceWithRegister'
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
