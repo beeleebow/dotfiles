@@ -131,3 +131,8 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
+" --------------------------- key mappings
+
+inoremap jk <esc>
+nnoremap <leader>w :execute("up")<cr>
+nnoremap <leader>q <c-z>
