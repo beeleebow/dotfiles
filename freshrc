@@ -11,31 +11,27 @@
 # Updates fresh
 fresh freshshell/fresh bin/fresh --bin
 
-# Hammerspoon
-fresh jasonrudolph/ControlEscape.spoon . --file=~/.hammerspoon/Spoons/ControlEscape.spoon/
-fresh programs/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
-
 # symlink files
-fresh programs/bash/bashrc --file
-fresh programs/bash/bash_profile --file
-fresh programs/vim/vimrc --file
-fresh programs/vim/markdown.vim --file=~/.vim/ftplugin/markdown.vim
+fresh bash/bashrc --file
+fresh bash/bash_profile --file
+fresh vim/vimrc --file
+fresh vim/markdown.vim --file=~/.vim/ftplugin/markdown.vim
 fresh Brewfile --file=Brewfile
-fresh programs/tmux/tmux.conf --file
+fresh tmux/tmux.conf --file
 fresh chriskempson/base16-shell . --file=~/.config/base16-shell/
 
 # tmux up - thanks James
 fresh jamesottaway/tmux-up tmux-up --bin
 
 # components of bashrc
-fresh programs/bash/dotfiles.sh
-fresh programs/bash/path.sh
-fresh programs/bash/prompt.sh
-fresh programs/bash/aliases.sh
-fresh programs/bash/base_16.sh
-fresh programs/bash/nix.sh
-fresh programs/bash/nvm.sh
-fresh programs/bash/fzf.sh
+fresh bash/dotfiles.sh
+fresh bash/path.sh
+fresh bash/prompt.sh
+fresh bash/aliases.sh
+fresh bash/base_16.sh
+fresh bash/nix.sh
+fresh bash/nvm.sh
+fresh bash/fzf.sh
 
 # gets plug.vim file from junegunn/vim-plug and puts it at ~/.vim/autoload/plug.vim
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim
