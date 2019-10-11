@@ -2,11 +2,6 @@ if exists("b:current_syntax")
   finish
 endif
 
-"--------------------------------------- indentation
-
-au FileType cs set shiftwidth=4
-au FileType cs set softtabstop=4
-
 "--------------------------------------- access modifiers
 syntax keyword csPublicKeyword public
 hi def link csPublicKeyword VisualNOS
