@@ -138,8 +138,3 @@ inoremap jk <esc>
 nnoremap <leader>w :execute("up")<cr>
 nnoremap <leader>q <c-z>
 
-" --------------------------- haskell syntax settings
-
-let g:hs_highlight_boolean=1
-let g:hs_highlight_types=1
-let g:hs_highlight_delimiters=1
