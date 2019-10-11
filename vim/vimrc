@@ -108,6 +108,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'sotte/presenting.vim'
 
 call plug#end()
 
@@ -136,3 +137,9 @@ endif
 inoremap jk <esc>
 nnoremap <leader>w :execute("up")<cr>
 nnoremap <leader>q <c-z>
+
+" --------------------------- haskell syntax settings
+
+let g:hs_highlight_boolean=1
+let g:hs_highlight_types=1
+let g:hs_highlight_delimiters=1
