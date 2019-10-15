@@ -9,4 +9,4 @@ let g:hs_highlight_delimiters=1
 
 " --------------------------- run brittany on save
 
-au BufWritePost * silent! !brittany %:p --write-mode=inplace
+au BufWritePost *.hs silent! !brittany %:p --write-mode=inplace
