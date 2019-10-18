@@ -27,10 +27,6 @@ fresh vim/indent/cs.vim --file=~/.vim/indent/cs.vim
 # highlighting overrides
 fresh vim/syntax/cs.vim --file=~/.vim/syntax/cs.vim
 
-# file type overrides
-fresh vim/ftplugin/haskell.vim --file=~/.vim/ftplugin/haskell.vim
-fresh vim/ftplugin/markdown.vim --file=~/.vim/ftplugin/markdown.vim
-
 # tmux up - thanks James
 fresh jamesottaway/tmux-up tmux-up --bin
 
