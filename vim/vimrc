@@ -109,7 +109,6 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sotte/presenting.vim'
-Plug 'vim-scripts/AutoClose'
 Plug 'w0rp/ale'
 
 call plug#end()
