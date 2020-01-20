@@ -17,6 +17,7 @@ fresh bash/bash_profile --file
 fresh vim/vimrc --file
 fresh Brewfile --file=Brewfile
 fresh tmux/tmux.conf --file
+fresh git/gitconfig --file
 fresh chriskempson/base16-shell . --file=~/.config/base16-shell/
 
 # --------------------------- Vim
@@ -39,6 +40,7 @@ fresh bash/base_16.sh
 fresh bash/nix.sh
 fresh bash/nvm.sh
 fresh bash/fzf.sh
+fresh bash/global_functions.sh
 
 # gets plug.vim file from junegunn/vim-plug and puts it at ~/.vim/autoload/plug.vim
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim

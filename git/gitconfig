@@ -1,0 +1,46 @@
+[user]
+  name = Brad Bow
+  email = brad.bow@stacktracehq.com
+[core]
+[alias]
+  l = log --date=iso --pretty='%Cred%h%Creset |%C(yellow)%d%Creset %s %Cgreen(%ad)%Creset %C(cyan)[%an]%Creset' --graph -n 10
+  l2 = log --graph --all --oneline
+  c = commit -m
+  s = status
+  co = checkout
+  d = diff
+  cld = clean --force --dry-run
+  clf = clean --force
+  puf = push --force-with-lease
+  ac = commit --amend --no-edit
+  riom = rebase -i origin/master
+[pager]
+  diff = true
+  log = true
+  show = true
+[rebase]
+  autosquash = true
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  autocrlf = input
+  eol = lf
+  editor = vim
+[diff]
+  prompt = false
+  tool = bc4
+  guitool = bc4
+[merge]
+  tool = bc4
+[mergetool "bc4"]
+  cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+  conflictstyle = diff3
+  prompt = false
+  trustExitCode = true
+[push]
+  default = current
+[pull]
+  rebase = true
+[mergetool]
+  keepBackup = false
+[credential]
+	helper = store
