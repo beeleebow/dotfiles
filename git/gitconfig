@@ -5,7 +5,9 @@
 [alias]
   l = log --date=iso --pretty='%Cred%h%Creset |%C(yellow)%d%Creset %s %Cgreen(%ad)%Creset %C(cyan)[%an]%Creset' --graph -n 10
   l2 = log --graph --all --oneline
-  c = commit -m
+  ap = add -p
+  aa = add .
+  c = commit
   s = status
   co = checkout
   d = diff
