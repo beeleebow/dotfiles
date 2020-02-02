@@ -34,13 +34,14 @@ fresh jamesottaway/tmux-up tmux-up --bin
 # components of bashrc
 fresh bash/dotfiles.sh
 fresh bash/path.sh
-fresh bash/prompt.sh
 fresh bash/aliases.sh
+fresh bash/prompt.sh
 fresh bash/base_16.sh
 fresh bash/nix.sh
-fresh bash/nvm.sh
 fresh bash/fzf.sh
 fresh bash/global_functions.sh
+# This seems to slow everything down...
+# fresh bash/nvm.sh
 
 # gets plug.vim file from junegunn/vim-plug and puts it at ~/.vim/autoload/plug.vim
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim
