@@ -13,6 +13,7 @@ fresh freshshell/fresh bin/fresh --bin
 
 # symlink files
 fresh bash/bashrc --file
+fresh alacritty/alacritty.yml --file=~/.alacritty.yml
 fresh bash/bash_profile --file
 fresh vim/vimrc --file
 fresh Brewfile --file=Brewfile
