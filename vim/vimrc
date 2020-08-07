@@ -110,6 +110,8 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sotte/presenting.vim'
 Plug 'w0rp/ale'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 call plug#end()
 
@@ -153,3 +155,6 @@ inoremap jk <esc>
 nnoremap <leader>w :execute("up")<cr>
 nnoremap <leader>q <c-z>
 
+" --------------------------- Goyo and Limelight
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
