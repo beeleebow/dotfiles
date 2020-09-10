@@ -16,6 +16,7 @@ fresh bash/bashrc --file
 fresh alacritty/alacritty.yml --file=~/.alacritty.yml
 fresh bash/bash_profile --file
 fresh vim/vimrc --file
+fresh vim/vimrc --file=~/.ideavimrc
 fresh Brewfile --file=Brewfile
 fresh tmux/tmux.conf --file
 fresh git/gitconfig --file
