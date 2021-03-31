@@ -1,6 +1,7 @@
 [user]
   name = Brad Bow
   email = brad.bow@stacktracehq.com
+  signingkey = 2559BA79DE940362
 [core]
 [alias]
   l = log --date=iso --pretty='%Cred%h%Creset |%C(yellow)%d%Creset %s %Cgreen(%ad)%Creset %C(cyan)[%an]%Creset' --graph -n 10
