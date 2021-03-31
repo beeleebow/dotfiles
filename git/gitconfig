@@ -10,6 +10,7 @@
   ap = add -p
   aa = add .
   c = commit
+  cs = commit -S
   s = status
   co = checkout
   d = diff
