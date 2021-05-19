@@ -45,5 +45,9 @@ fresh bash/global_functions.sh
 # This seems to slow everything down...
 fresh bash/nvm.sh
 
+## This is exluding in .git/info/exclude, so will only work on FTR machine
+fresh ftr-private/npm-token.sh
+fresh ftr-private/local-dev-cert.sh
+
 # gets plug.vim file from junegunn/vim-plug and puts it at ~/.vim/autoload/plug.vim
 fresh junegunn/vim-plug plug.vim --file=~/.vim/autoload/plug.vim
