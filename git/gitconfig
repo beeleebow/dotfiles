@@ -19,6 +19,7 @@
   puf = push --force-with-lease
   ac = commit --amend --no-edit
   riom = rebase -i origin/master
+  riod = rebase -i origin/develop
 [pager]
   diff = true
   log = true
