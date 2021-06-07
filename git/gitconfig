@@ -9,7 +9,7 @@
   a = add
   ap = add -p
   aa = add .
-  c = commit
+  c = commit -S
   cs = commit -S
   s = status
   co = checkout
@@ -17,7 +17,7 @@
   cld = clean --force --dry-run
   clf = clean --force
   puf = push --force-with-lease
-  ac = commit --amend --no-edit
+  ac = commit -S --amend --no-edit
   riom = rebase -i origin/master
   riod = rebase -i origin/develop
 [pager]
