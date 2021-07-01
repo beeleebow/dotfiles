@@ -95,6 +95,8 @@ set history=1000
 
 " --------------------------- vim plugins via Plug
 
+set re=0
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
