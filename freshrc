@@ -35,6 +35,7 @@ fresh jamesottaway/tmux-up tmux-up --bin
 
 # components of bashrc
 fresh bash/dotfiles.sh
+fresh bash/env.sh
 fresh bash/path.sh
 fresh bash/aliases.sh
 fresh bash/prompt.sh
