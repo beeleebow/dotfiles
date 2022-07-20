@@ -45,6 +45,8 @@ fresh bash/fzf.sh
 fresh bash/global_functions.sh
 # This seems to slow everything down...
 fresh bash/nvm.sh
+fresh bash/direnv.sh
+fresh bash/ulimit.sh
 
 ## This is exluding in .git/info/exclude, so will only work on FTR machine
 fresh ftr-private/npm-token.sh
