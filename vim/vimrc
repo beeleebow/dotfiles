@@ -1,3 +1,5 @@
+set shell=/bin/bash
+
 " Use Vim settings, instead of Vi
 set nocompatible
 set exrc
