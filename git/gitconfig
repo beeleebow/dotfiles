@@ -1,7 +1,7 @@
 [user]
   name = Brad Bow
   email = bradbow@fastmail.com
-  signingkey = 2559BA79DE940362
+  signingkey = 4EF436792AFFA77C
 [core]
 [init]
   defaultBranch = main
