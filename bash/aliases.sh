@@ -7,5 +7,5 @@ alias ulid='$HOME/src/util/ulid/run.py && echo ""'
 alias ulidc='$HOME/src/util/ulid/run.py | pbcopy'
 alias awip="git add --all && git commit -S --amend --no-edit"
 alias gap="git add -p"
-alias sc="git log --pretty=format:'## %h - %s%n%b'"
+alias sc="git log --reverse --pretty=format:'## %h - %s%n%b'"
 
