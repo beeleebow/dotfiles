@@ -1,2 +1,2 @@
-ulimit -n 1024
+ulimit -n 524288
 
